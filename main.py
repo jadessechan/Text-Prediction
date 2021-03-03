@@ -7,7 +7,7 @@ from nltk.probability import ConditionalFreqDist
 
 
 def main():
-    file = open('alice.txt', 'r')
+    file = open('corpora/alice.txt', 'r')
     text = ""
     while True:
         line = file.readline()
@@ -113,7 +113,6 @@ def predict(model, user_input):
 
     # display prediction from highest to lowest maximum likelihood
     prediction = sorted(dict(model[prev_words[0], prev_words[1]]), key=lambda x: dict(model[prev_words[0], prev_words[1]])[x], reverse=True)
-    # prediction = dict(model[prev_words[0], prev_words[1]])
     print("Trigram model predictions: ", prediction)
 
     word = []
@@ -122,7 +121,7 @@ def predict(model, user_input):
         word.append(key)
         weight.append(prob)
     # pick from a weighted random probability of predictions
-    next_word = random.choices(word, cum_weights=weight, k=1)
+    next_word = random.choices(word, weights=weight, k=1)
     # add predicted word to user input
     user_input.append(next_word[0])
     print(' '.join(user_input))
