@@ -20,6 +20,16 @@ Here is an example of the program output:
 ![demo image of running program](https://github.com/jadessechan/Text-Prediction/blob/master/images/demo.png)
 ### final output of demo:
 User input: ***alice said to the*** <br />
-Prediction: ***alice said to the table, half hoping she might find another*** <br />
-*comma was added for readability* <br />
+Prediction: ***alice said to the table, half hoping she might find another***
+*(comma was added for readability)* <br />
 What did alice want to find again?? The suspense...😖 <br />
+
+## Implementation
+I used NLTK's probability library to store the probability of each predicted word,
+```sh
+ConditionalFreqDist()
+```
+then the program picks from a weighted random probability to decide which prediction to append to the given phrase
+```sh
+random.choices()
+```
