@@ -1,6 +1,6 @@
 # Text-Prediction
 
-This program implements a statistical trigram language model with the NLTK library to predict the next word based on the Alice in Wonderland corpus.
+This program implements a statistical trigram language model with NLTK for text prediction based on the Alice in Wonderland corpus.
 
 ## Getting started
 1. clone or download this repository
