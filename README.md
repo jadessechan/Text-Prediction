@@ -19,7 +19,7 @@ Here is a frequency distribution plot of the most common 30 trigrams:
 Here is an example of the program output:
 ![demo image of running program](https://github.com/jadessechan/Text-Prediction/blob/master/images/demo.png)
 ### final output of demo:
-user input: ***alice said to the***
-prediction: ***alice said to the table, half hoping she might find another***
-*comma was added for readability*
-What did alice want to find again?? The suspense...😖
+User input: ***alice said to the*** <br />
+Prediction: ***alice said to the table, half hoping she might find another*** <br />
+*comma was added for readability* <br />
+What did alice want to find again?? The suspense...😖 <br />
