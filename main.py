@@ -7,7 +7,7 @@ from nltk.probability import ConditionalFreqDist
 
 
 def main():
-    file = open('corpora/alice.txt', 'r')
+    file = open('alice.txt', 'r')
     text = ""
     while True:
         line = file.readline()
