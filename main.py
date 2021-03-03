@@ -73,7 +73,6 @@ def clean(text):
     and calculate word probabilities
 """
 def n_gram_model(text):
-    # pad twice for tri-grams (n param in pad() funcs)
     trigrams = list(nltk.ngrams(text, 3, pad_left=True, pad_right=True, left_pad_symbol='<s>', right_pad_symbol='</s>'))
     # bigrams = list(nltk.ngrams(text, 2, pad_left=True, pad_right=True, left_pad_symbol='<s>', right_pad_symbol='</s>'))
 
@@ -100,7 +99,7 @@ def n_gram_model(text):
 
 """
     Generate predictions from the Conditional Frequency Distribution
-    diction (param: model), append weighted random choice to user's phrase,
+    dictionary (param: model), append weighted random choice to user's phrase,
     allow option to generate more words following the prediction
 """
 def predict(model, user_input):
