@@ -29,7 +29,11 @@ I used NLTK's probability library to store the probability of each predicted wor
 ```sh
 ConditionalFreqDist()
 ```
-then the program picks from a weighted random probability to decide which prediction to append to the given phrase
+then the program picks from a weighted random probability to decide which prediction to append to the given phrase.
 ```sh
 random.choices()
+```
+The user decides when to stop the program by choosing whether or not to predict the next word.
+```sh
+"Do you want to generate another word? (type 'y' for yes or 'n' for no): "
 ```
