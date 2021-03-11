@@ -54,7 +54,7 @@ def filter(text):
 
 """
     Remove stopwords and profanity, tokenize remaining words,
-    perform lemmatization and POS tagging (optional)
+    and perform lemmatization
 """
 def clean(text):
     tokens = nltk.word_tokenize(text)
