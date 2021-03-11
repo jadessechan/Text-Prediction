@@ -53,7 +53,7 @@ def filter(text):
     return text
 
 """
-    Remove stopwords and profanity, tokenize remaining words,
+    Tokenize remaining words
     and perform lemmatization
 """
 def clean(text):
